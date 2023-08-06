@@ -205,10 +205,19 @@ body {
 .plan {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.plan__img {
+  flex-basis: 45%;
+  padding: 0 10px;
+}
+.plan__img img {
+  width: 100%;
+  height: 100%;
 }
 .plan__description {
-  width: 503px;
-  margin-top: 85px;
+  flex-basis: 55%;
+  max-width: 503px;
 }
 .plan__title {
   font-weight: 600;
@@ -235,7 +244,7 @@ body {
   margin-top: 20px; 
 }
 .plan__item {
-  background: url(../image/Check\ Icon\ -\ Dark.svg) left no-repeat;
+  background: url(/image/Check\ Icon\ -\ Dark.jpg) left no-repeat;
   padding: 0px 0px 0px 30px;
 }
 .plan__at {
@@ -299,6 +308,9 @@ body {
   display: flex;
   width: 270px;
   margin-top: 20px;
+}
+.app-block__img {
+  padding-right: 20px;
 }
 .google_pay {
   margin-right: 16px;
@@ -414,7 +426,7 @@ h5 {
   opacity: 80%;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 600px) {
   .info-block__img img {
     width: 100%;
   }
@@ -618,7 +630,7 @@ h5 {
     font-size: 14px;
   }
 }
-  @media (min-width: 541px) and (max-width: 920px) {
+  @media (min-width: 600px) and (max-width: 920px) {
   .column_footer {
     max-width: 165px;
   }
@@ -659,5 +671,10 @@ h5 {
   .app_store {
     text-align: center;
     margin-bottom: 15px;
+  }
+}
+@media (max-width: 1080px) {
+  .app-block__img {
+    display: none;
   }
 }
